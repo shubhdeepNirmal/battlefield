@@ -7,9 +7,8 @@ const app = express();
 app.use(cors({
   origin: [
      'https://shubhdeepnirmal.github.io',
-      'https://shubhdeepnirmal.github.io/',
       'https://shubhdeepnirmal.github.io/battlefield',
-     'https://shubhdeepnirmal.github.io/battlefield/'
+
   ]
 }));
 
