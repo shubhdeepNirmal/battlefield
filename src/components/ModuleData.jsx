@@ -11,7 +11,7 @@ const ModuleData =()=>{
    });
 
    useEffect(() => {
-        fetch("")
+        fetch("https://battlefieldbackend.onrender.com")
         .then((res)=>res.json())
         .then((json)=>setTableData(json))
         .catch((error) => console.error("Error fetching data:", error));
