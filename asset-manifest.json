@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/battlefield/static/css/main.7ce595c1.css",
-    "main.js": "/battlefield/static/js/main.8e6d7917.js",
+    "main.js": "/battlefield/static/js/main.0c3421eb.js",
     "index.html": "/battlefield/index.html",
     "main.7ce595c1.css.map": "/battlefield/static/css/main.7ce595c1.css.map",
-    "main.8e6d7917.js.map": "/battlefield/static/js/main.8e6d7917.js.map"
+    "main.0c3421eb.js.map": "/battlefield/static/js/main.0c3421eb.js.map"
   },
   "entrypoints": [
     "static/css/main.7ce595c1.css",
-    "static/js/main.8e6d7917.js"
+    "static/js/main.0c3421eb.js"
   ]
 }
