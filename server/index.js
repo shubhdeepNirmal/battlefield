@@ -5,7 +5,9 @@ const app = express();
 
 // Allow the specific GitHub Pages origin
 app.use(cors({
-  origin: 'https://shubhdeepnirmal.github.io/battlefield',
+  origin: ['https://shubhdeepnirmal.github.io/battlefield',
+    'https://shubhdeepnirmal.github.io',
+  ],
   methods: ['GET'],
 }));
 
