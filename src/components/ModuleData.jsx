@@ -10,13 +10,17 @@ const ModuleData =()=>{
         rules: [],
    });
 
-   useEffect(() => {
-        fetch("https://battlefieldbackend.onrender.com/api/data-json")
-        .then((res)=>res.json())
-        .then((json)=>setTableData(json))
-        .catch((error) => console.error("Error fetching data:", error));
-   }
-   , []);
+  useEffect(() => {
+  fetch("https://battlefieldbackend.onrender.com/api/data-json")
+  .then((res) => {
+    if (!res.ok) throw new Error("Network response was not ok");
+    return res.json();
+  })
+  .then((json) => setTableData(json))
+  .catch((error) => console.error("Error fetching data:", error));
+
+}, []);
+
 
 
     return(
