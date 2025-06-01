@@ -5,7 +5,9 @@ const app = express();
 
 // Simplified CORS for testing - you can restrict later
 app.use(cors({
-  origin: 'https://shubhdeepnirmal.github.io'  // Single origin string, not array
+  origin: [
+    'https://shubhdeepnirmal.github.io/battlefield'
+  ]
 }));
 
 
