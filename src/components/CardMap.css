@@ -1,0 +1,82 @@
+.server__map {
+  background-color: rgba(16, 16, 16, 0.5);
+  border-radius:0;
+  overflow: hidden;
+  max-width: 96%;
+  margin: 16px auto;
+  position: relative;
+  font-family: 'Rajdhani', 'Roboto Condensed', 'DIN Condensed', sans-serif;
+  text-align:left;
+  text-transform: uppercase;
+  transform: scale(0.8)
+}
+.server__map:hover {
+   background-color: #f7f7f7;
+   color: black;
+}
+
+.server__map:hover .server__map-mode,
+.server__map:hover .server__map-mapn {
+  color: black;
+}
+
+.server__map,
+.server__map-mode,
+.server__map-mapn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+
+.server__map-image-w {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.server__map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.server__map-image-w:hover .server__map-image {
+  transform: scale(1.1);
+}
+
+.server__map-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 1;
+}
+
+.server__map-mode,
+.server__map-mapn {
+  position: relative;
+  z-index: 2;
+  padding: 8px 12px;
+  color: #fff;
+}
+
+.server__map-mode {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 8px;
+  font-family: 'Rajdhani', 'Roboto Condensed', 'DIN Condensed', sans-serif;
+}
+
+.server__map-mapn {
+  font-size: 14.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-family: 'Rajdhani', 'Roboto Condensed', 'DIN Condensed', sans-serif;
+}

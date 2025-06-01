@@ -1,0 +1,87 @@
+.browser_breadcrumb {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 5%;
+
+  background-color: rgb(16, 16, 16,1);
+  background-blend-mode: overlay;
+
+  color: rgb(255, 255, 255);
+  font-family: 'Rajdhani', 'Roboto Condensed', 'DIN Condensed', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  backdrop-filter: none;
+  border-bottom: 0px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.previous1 {
+  color: #fff;
+  letter-spacing: .1vh;
+  text-transform: uppercase;
+  margin-bottom: .3vh;
+  margin-right: 1.5vh;
+  font-family: 'Rajdhani', 'Roboto Condensed', 'DIN Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 2vh;
+  text-decoration: none;
+  transition: opacity .1s;
+  display: flex;
+  align-items: center;
+}
+
+.browser_breadcrumb-back {
+  display: inline-block;
+}
+
+.browser_breadcrumb-back-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+}
+
+.browser_breadcrumb-bar {
+  color: #888;
+  margin: 0 4px;
+}
+
+/* Hover styles for links only */
+.browser_breadcrumb-multiplayer,
+.browser_breadcrumb-serverbrowser {
+  color: #cfcfcf;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.browser_breadcrumb-multiplayer:hover,
+.browser_breadcrumb-serverbrowser:hover {
+  color: rgb(204, 185, 185);
+  
+}
+
+/* Static header */
+.server_info_breadcrumb {
+  color: #fff;
+    text-transform: uppercase;
+    font-family: 'Rajdhani', 'Roboto Condensed', 'DIN Condensed', sans-serif;
+    font-size: 40;
+    font-weight: 600;
+    line-height: 4vh;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .browser_breadcrumb {
+    padding: 15px;
+  }
+
+  .previous1 {
+    font-size: 200px;
+  }
+
+  .server_info_breadcrumb {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,18 @@
+/* src/Background.css */
+.app-background {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+
+  background-image: 
+    linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)),
+    url('https://uploads-ssl.webflow.com/6013fff62154adaa4600f932/601abb0b487fc1bfc56a1c3b_menu__background-30blur.jpg');
+
+  background-size: auto 200%; /* ensures it covers the full area */
+  background-position: 30% 17.5% ; /* centers it nicely */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
