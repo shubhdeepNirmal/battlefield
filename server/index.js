@@ -3,16 +3,12 @@ import cors from 'cors';
 
 const app = express();
 
-// Simplified CORS for testing - you can restrict later
-// Install CORS middleware
-const cors = require('cors');
+// Allow the specific GitHub Pages origin
 app.use(cors({
-  origin: 'https://shubhdeepnirmal.github.io/battlefield/' // or use '*' for public APIs (not recommended for sensitive data)
+  origin: 'https://shubhdeepnirmal.github.io/battlefield',
+  methods: ['GET'],
 }));
 
-
-
-// Add a basic route to test if server is working
 app.get('/', (req, res) => {
   res.json({ message: 'Server is running!' });
 });
