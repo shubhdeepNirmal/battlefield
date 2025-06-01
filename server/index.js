@@ -4,11 +4,12 @@ import cors from 'cors';
 const app = express();
 
 // Simplified CORS for testing - you can restrict later
+// Install CORS middleware
+const cors = require('cors');
 app.use(cors({
-  origin: [
-    'https://shubhdeepnirmal.github.io/battlefield'
-  ]
+  origin: 'https://shubhdeepnirmal.github.io/battlefield/' // or use '*' for public APIs (not recommended for sensitive data)
 }));
+
 
 
 // Add a basic route to test if server is working
