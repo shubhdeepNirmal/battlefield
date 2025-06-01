@@ -45,7 +45,7 @@ const ModuleData =()=>{
 
          <div className="server-buttons">
              <button className="server-button">Join Server</button>
-                <button className="server-button">Sepctate</button>
+                <button className="server-button">Spectate</button>
                 <button className="server-button"> Join as Commander</button>
                 <button className="server-button">★ 13672</button>
            </div>
